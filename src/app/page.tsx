@@ -1,95 +1,48 @@
+
 import Image from "next/image";
-import styles from "./page.module.css";
+import page from '../styles/page.module.css';
+import 'boxicons/css/boxicons.min.css';
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <section className={page.home} id="home">
+      <div className={page['home-content']}>
+        <h1>Hi, It's <span>Saima</span></h1>
+        <h3 className={page['text-animation']}>I am a <span></span></h3>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          I build modern, responsive websites and applications that help businesses grow.
+          With expertise in both front-end and back-end technologies, I ensure a smooth
+          and effective digital experience.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+        <div className={page['social-icons']}>
+          <a href="#" aria-label="LinkedIn Profile">
+            <i className="bx bxl-linkedin"></i>
+          </a>
+          <a href="#" aria-label="GitHub Profile">
+            <i className="bx bxl-github"></i>
+          </a>
+          <a href="#">
+            <i className="bx bxl-instagram"></i>
+          </a>
+          <a href="#">
+            <i className="bx bxl-twitter"></i>
           </a>
         </div>
+        <div className={page['btn-group']}>
+          <a href="#" className={page.btn}>Hire</a>
+          <a href="#contact" className={page.btn}>Contact</a>
+        </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div className={page['home-img']}>
+        <Image 
+          src="/profilepicture.jpg" 
+          alt="Portrait of Saima Salar" 
+          width={500} 
+          height={500} 
         />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+ 
+    </section>
   );
 }
