@@ -4,7 +4,7 @@ import testimonial from '../../styles/testimonial.module.css';
 
 const Testimonials = () => {
   return (
-    <section className={testimonial.testimonials} id="testimonials">
+    <section className={testimonial.testimonials} id={testimonial.testimonials}>
       <div className={testimonial['testimonials-box']}>
         <h2 className={testimonial.heading}>Testimonials</h2>
         <div className={testimonial.wrapper}>

@@ -5,7 +5,7 @@ import project from '../../styles/project.module.css';
 
 const Projects = () => {
   return (
-    <section className={project.project} id="project">
+    <section className={project.project} id={project.project}>
       <h2 className={project.heading}>Projects</h2>
       <div className={project['timeline-items']}>
         <div className={project['timeline-item']}>

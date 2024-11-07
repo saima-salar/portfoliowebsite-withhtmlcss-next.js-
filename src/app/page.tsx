@@ -6,7 +6,7 @@ import 'boxicons/css/boxicons.min.css';
 
 export default function Home() {
   return (
-    <section className={page.home} id="home">
+    <section className={page.home} id={page.home}>
       <div className={page['home-content']}>
         <h1>Hi, It's <span>Saima</span></h1>
         <h3 className={page['text-animation']}>I am a <span></span></h3>

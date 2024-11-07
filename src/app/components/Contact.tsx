@@ -3,7 +3,7 @@ import contact from '../../styles/contact.module.css';
 
 const Contact = () => {
   return (
-    <section className={contact.contact} id="contact">
+    <section className={contact.contact} id={contact.contact}>
     <h2 className={contact.heading}>Contact <span>me</span></h2>
     <form action="">
         <div className={contact['input-group']}>
@@ -16,7 +16,7 @@ const Contact = () => {
                 <input type="text" placeholder="subject"/>
             </div>
         </div>
-        <div className="input-group-2">
+        <div className={contact['input-group-2']}>
             <textarea name="" id="" cols={30} rows={10} placeholder="Your Message"></textarea>
             <input className={contact.btn} type="submit" value="Send Message" />
         </div>
